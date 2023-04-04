@@ -70,13 +70,18 @@ function head_cleanup(){
 
 }
 
-// Adds aria label to blog posts list on home page so that they are accessible (link is on the container, so page title isn't included in the link)
-add_filter( 'render_block', function( $block_content, $block ) {
-    if ( !is_admin() && ! empty( $block['attrs']['className'] ) && strpos( $block['attrs']['className'], 'add-aria-label' ) !== false ) {
-		$myreplace1 = 'ariareplace';
-		$myinsert1 = get_the_title();
-        $block_content = str_replace( $myreplace1, $myinsert1 , $block_content );
+// Auto-generate titles on posts based on date and time
+function set_custom_title( $value, $post_id ) {
+    $label = 'Status Update';
+    
+    $date = date("Ymd");
+    $date =  date("Y-m-d", strtotime($date));
+    $timeis = date("h:i:sa");
+    $title = $label . ' - ' . $timeis . ' - ' . $date;
+    $post_slug = sanitize_title_with_dashes ($title,'','save');
+    $post_slugsan = sanitize_title($post_slug);
+    $value['post_title'] = $title;
+    $value['post_name'] = $post_slugsan;
+    return $value;
     }
-
-    return $block_content;
-}, 10, 2 );
+    add_filter( 'wp_insert_post_data' , 'set_custom_title' , '10', 2 );
