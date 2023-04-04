@@ -59,12 +59,14 @@
  }
 }
 
-a {
+a,
+a:visited {
   color: var(--text);
   text-decoration-thickness: 0.125rem;
 }
 
-.inside-article a:hover {
+a:hover,
+a:active {
   background-color: var(--pink);
   text-decoration: none;
   color: var(--dark-text);
