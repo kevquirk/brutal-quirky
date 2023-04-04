@@ -93,6 +93,10 @@ a:active {
   margin-left: 18px;
 }
 
+.main-navigation li:first-child {
+  margin-left: 0
+}
+
 .main-navigation a {
   font-weight: 600;
   text-decoration: underline;
