@@ -8,24 +8,35 @@
  Version:      1.4
 */
 
-/** Global colour variables **/
+/** Global variables **/
 :root {
-	--text: #444;
-	--accent-text: #000;
+	--text: #000;
+  --dark-text: #000;
 	--bg: #fafafa;
 	--accent-bg: #efefef;
-  --warning: #ffeeaa;
-  --notice: #aaccff;
-	--sans: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --input-bg: white;
+  --yellow: #ffdd55;
+  --blue: #aaccff;
+  --pink: #f495c6;
+  --purple: #929cf9;
+  --green: #c3ec81;
+  --highlight: #ffdd55;
+	--sans: 'GeneralSans', Avenir, 'Avenir Next LT Pro', Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
 	--mono: Menlo, Consolas, Monaco, "Liberation Mono", Lucida Console, monospace;
+  --content-margin: 1.5rem auto;
+  --bigger-content-margin: 2.5rem auto;
+  --standard-border: 3px solid var(--text);
 }
 
 @media (prefers-color-scheme: dark) {
  :root {
-   --text: #ccc;
-   --accent-text: #fafafa;
+   --text: #eee;
    --bg: #222;
    --accent-bg: #2d2d2d;
+   --input-bg: #2d2d2d;
+   img {
+    opacity: 70%;
+   }
  }
 }
 
@@ -39,7 +50,7 @@ a {
 
 .inside-article h2 a,
 .inside-article h3 a {
-  color: var(--accent-text) !important;
+  color: var(--dark-text) !important;
 }
 
 .site-logo {
@@ -138,8 +149,8 @@ h2, h3 {
 .notice-red,
 .warning {
   background: var(--accent-bg);
-  border: 3px solid var(--accent-text);
-  color: var(--accent-text);
+  border: 3px solid var(--dark-text);
+  color: var(--dark-text);
   padding: 1rem 1rem 2rem 1rem;
 }
 
@@ -147,8 +158,8 @@ h2, h3 {
 .notice-red::before,
 .warning::before {
   color: #000;
-  border-right: 3px solid var(--accent-text);
-  border-bottom: 3px solid var(--accent-text);
+  border-right: 3px solid var(--dark-text);
+  border-bottom: 3px solid var(--dark-text);
   display: block;
   text-align: center;
   position: relative;
@@ -189,7 +200,7 @@ h2, h3 {
 .notice a,
 .warning a,
 .notice-red a {
-  color: var(--accent-text);
+  color: var(--dark-text);
 }
 
 .notice a:hover,
@@ -269,8 +280,8 @@ h2, h3 {
 }
 
 .wp-block-search__button:hover {
-  background: var(--accent-text);
-  border-color: var(--accent-text);
+  background: var(--dark-text);
+  border-color: var(--dark-text);
   color: var(--bg);
 }
 
