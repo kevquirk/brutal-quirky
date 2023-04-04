@@ -71,17 +71,10 @@ function head_cleanup(){
 }
 
 // Auto-generate titles on posts based on date and time
-function set_custom_title( $value, $post_id ) {
-    $label = 'Status Update';
-    
-    $date = date("Ymd");
-    $date =  date("Y-m-d", strtotime($date));
-    $timeis = date("h:i:sa");
-    $title = $label . ' - ' . $timeis . ' - ' . $date;
-    $post_slug = sanitize_title_with_dashes ($title,'','save');
-    $post_slugsan = sanitize_title($post_slug);
-    $value['post_title'] = $title;
-    $value['post_name'] = $post_slugsan;
-    return $value;
+add_filter('default_title', function ($title) {
+    global $post_type;
+    if ('post' == $post_type) {
+        return date('Y-m-d h:i');
     }
-    add_filter( 'wp_insert_post_data' , 'set_custom_title' , '10', 2 );
+    return $title;
+});
