@@ -240,6 +240,7 @@ h2, h3 {
   border: 3px solid var(--text);
 	text-decoration: none;
   color: var(--text);
+  padding: 10px 12px;
 }
 
 .brutal-button-wrapper {
