@@ -257,7 +257,8 @@ h2, h3 {
 .brutal-button:active,
 .brutal-shadow:hover,
 .brutal-shadow:active {
-  box-shadow: 10px 10px 0 0 var(--text);
+  box-shadow: 0px 0px 0 0 var(--text);
+  background: var(--pink);
 }
 
 .icon {
