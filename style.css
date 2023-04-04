@@ -236,6 +236,7 @@ h2, h3 {
 }
 
 .brutal-button,
+.brutal-shadow,
 button,
 input[type="button"],
 input[type="reset"],
@@ -246,18 +247,14 @@ a.button {
 	text-decoration: none;
   color: var(--text);
   padding: 10px 12px;
+  box-shadow: 6px 6px 0 0 var(--text);
+  transition: all 0.1s ease;
+  display: inline-block;
 }
 
 .brutal-button-wrapper {
 	margin: 4rem 0;
 	text-align: center;
-}
-
-.brutal-button,
-.brutal-shadow {
-  box-shadow: 6px 6px 0 0 var(--text);
-  transition: all 0.1s ease;
-  display: inline-block;
 }
 
 .brutal-button:hover,
