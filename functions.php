@@ -74,7 +74,7 @@ function head_cleanup(){
 add_filter('default_title', function ($title) {
     global $post_type;
     if ('post' == $post_type) {
-        return date('Y-m-d h:i');
+        return date('Y-m-d h:iA ');
     }
     return $title;
 });
