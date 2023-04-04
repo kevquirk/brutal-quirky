@@ -1,0 +1,394 @@
+/*
+ Theme Name:   Brutal Quirky
+ Theme URI:    https://kevq.uk
+ Description:  Kev Quirk's GeneratePress child theme
+ Author:       Kev Quirk
+ Author URI:   https://kevq.uk
+ Template:     generatepress
+ Version:      1.4
+*/
+
+/** Global colour variables **/
+:root {
+	--text: #444;
+	--accent-text: #000;
+	--bg: #fafafa;
+	--accent-bg: #efefef;
+  --warning: #ffeeaa;
+  --notice: #aaccff;
+	--sans: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--mono: Menlo, Consolas, Monaco, "Liberation Mono", Lucida Console, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+ :root {
+   --text: #ccc;
+   --accent-text: #fafafa;
+   --bg: #222;
+   --accent-bg: #2d2d2d;
+ }
+}
+
+a {
+ text-decoration-thickness: 0.125rem !important;
+}
+
+.inside-article a:hover {
+  background-color: var(--accent-bg);
+}
+
+.inside-article h2 a,
+.inside-article h3 a {
+  color: var(--accent-text) !important;
+}
+
+.site-logo {
+ vertical-align: sub;
+ display: inline-block;
+ margin: 0.5rem 0 0.75rem 0;
+ width: 3.5rem;
+ height: auto;
+ stroke-width: 0;
+ stroke: var(--text);
+ fill: var(--text);
+}
+
+.main-navigation {
+  border-bottom: 3px solid var(--text);
+  border-top: 3px solid var(--text);
+  margin: .5rem auto;
+}
+
+.main-navigation a {
+  padding: 0.75rem 0;
+  font-weight: bold;
+}
+
+.main-navigation a:hover,
+.current-menu-item a {
+ background-color: var(--text);
+	color: var(--bg) !important;
+}
+
+blockquote {
+	border-left: 4px solid var(--text);
+}
+
+cite {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-style: normal;
+}
+
+pre {
+	background: var(--accent-bg);
+	border: 1px solid var(--text);
+	font-family: var(--mono);
+	font-size: 1rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: var(--mono);
+	font-size: 1rem;
+	background: var(--accent-bg);
+	border: 1px solid var(--text);
+	padding: 2px 5px;
+}
+
+pre code {
+	border: none;
+	padding: 0;
+}
+
+.wp-block-code code {
+  white-space: pre;
+}
+
+/* Allows for forcing code wrap where needed */
+.wp-block-code.code-wrap code {
+  white-space: pre-wrap !important;
+}
+
+h2, h3 {
+  margin-top: 3rem;
+}
+
+/* Removed top margin when needed */
+.no-top-margin {
+  margin-top: 0 !important;
+}
+
+/* TL;DR Block */
+.tldr {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin: 2.5rem 0;
+}
+
+/* Notice boxes */
+.notice,
+.notice-red,
+.warning {
+  background: var(--accent-bg);
+  border: 3px solid var(--accent-text);
+  color: var(--accent-text);
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+.notice::before,
+.notice-red::before,
+.warning::before {
+  color: #000;
+  border-right: 3px solid var(--accent-text);
+  border-bottom: 3px solid var(--accent-text);
+  display: block;
+  text-align: center;
+  position: relative;
+  left: -1rem;
+  top: -1rem;
+  padding: 2px 10px;
+  font-weight: bold;
+}
+
+.notice::before {
+  content: "NOTE";
+	background: var(--notice);
+	width: 5rem;
+}
+
+.notice-red::before,
+.warning::before {
+  content: "WARNING";
+	background: var(--warning);
+	width: 7.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .notice::before,
+  .notice-red::before,
+  .warning::before {
+    background: #000;
+  }
+  .notice::before {
+    color: var(--notice);
+  }
+  .notice-red::before,
+  .warning::before {
+    color: var(--warning);
+  } 
+}
+
+.notice a,
+.warning a,
+.notice-red a {
+  color: var(--accent-text);
+}
+
+.notice a:hover,
+.warning a:hover,
+.notice-red a:hover {
+  background-color: var(--bg);
+}
+
+.tldr,
+.medium,
+.has-medium-font-size {
+  font-size: 1.6rem;
+  line-height: 1.3;
+}
+
+.brutal-button {
+	background-color: var(--bg);
+  border: 3px solid var(--text);
+	text-decoration: none;
+  color: var(--text);
+}
+
+.brutal-button-wrapper {
+	margin: 4rem 0;
+	text-align: center;
+}
+
+.brutal-button,
+.brutal-shadow {
+  box-shadow: 6px 6px 0 0 var(--text);
+  transition: all 0.1s ease;
+}
+
+.brutal-button:hover,
+.brutal-button:active,
+.brutal-shadow:hover,
+.brutal-shadow:active {
+  box-shadow: 10px 10px 0 0 var(--text);
+}
+
+.icon {
+  vertical-align: sub;
+  padding-right: .25rem;
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.cat-links {
+  margin: 2rem 0;
+}
+
+.wp-block-image {
+  margin: 2rem 0;
+}
+
+.wp-block-search__input {
+  width: 80%;
+  border: 2px solid var(--text) !important;
+}
+
+@media(max-width: 640px) {
+  .wp-block-search__input {
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.wp-block-search__button {
+	border-radius: 0;
+	background: var(--text);
+	color: var(--bg);
+  border: 2px solid var(--text);
+}
+
+.wp-block-search__button:hover {
+  background: var(--accent-text);
+  border-color: var(--accent-text);
+  color: var(--bg);
+}
+
+/* Remove iOS formatting on inputs */
+input, textarea {
+ -webkit-appearance: none !important;
+ border-radius: 0 !important;
+}
+
+@media(max-width: 640px) {
+	.mobile-hide {
+		display: none;
+	}
+}
+
+/* Format tables & stripes */
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+td, th {
+	padding: 5px 0;
+	border: 1px dotted var(--text);
+}
+
+th {
+  border-bottom: 2px solid var(--text) !important;
+}
+
+.wp-block-table.is-style-stripes tr:nth-child(odd) {
+  background: var(--accent-bg) !important;
+  color: var(--text) !important;
+}
+
+.wp-block-table.is-style-stripes tr:nth-child(even) {
+  background: var(--bg) !important;
+}
+
+.wp-block-table table {
+    border: 2px solid var(--text) !important;
+}
+
+.wp-block-table.is-style-stripes {
+  border-bottom: none;
+}
+
+.nav-links {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.paging-navigation .nav-links>* {
+  padding: 0 10px !important;
+}
+
+/* Format details box */
+details {
+  background: var(--accent-bg);
+  border: 2px solid var(--text);
+  border-radius: 0;
+  margin: 2rem 0;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.6rem 1rem;
+}
+
+details[open] {
+  padding: 0.6rem 1rem 0.75rem 1rem;
+}
+
+details[open] summary + * {
+  margin-top: 0;
+}
+
+details[open] summary {
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+
+details[open] > *:last-child {
+  margin-bottom: 1.5rem;
+}
+
+.wp-block-audio audio {
+  margin: 2rem 0;
+}
+
+.taxonomy-description {
+  margin-bottom: 3rem !important;
+  }
+
+  /* This makes the stars on blogroll float right */
+  .floating {
+    position: absolute;
+  }
+
+  .blogroll-links {
+    text-decoration: underline;
+    text-decoration-thickness: 0.125rem !important;
+  }
+
+/* Mainly for alinging images */
+  .aligncenter {
+    text-align: center;
+  }
+
+  .alignleft {
+    text-align: left;
+  }
+
+  .alignright {
+    text-align: right;
+  }
+
+  .hidden {
+    display: none;
+  }

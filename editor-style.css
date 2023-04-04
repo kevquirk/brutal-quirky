@@ -1,0 +1,62 @@
+body {
+    font-family: var(--sans) !important;
+}
+
+.is-root-container.block-editor-block-list__layout,
+.edit-post-visual-editor__post-title-wrapper {
+  max-width: 624px !important;
+  margin: 4rem auto !important;
+}
+
+a,
+a:hover {
+  color: var(--text) !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: .15rem !important;
+}
+
+.tldr {
+  margin: 2rem auto !important;
+  max-width: 624px !important;
+}
+
+h2, h3 {
+  margin-top: 3rem !important;
+}
+
+code {
+  font-size: 15px;
+  padding: 2px 5px;
+ }
+
+pre {
+  background: var(--accent-bg) !important;
+  max-width: 620px !important;
+}
+
+.wp-block-rss {
+  margin: 2em auto !important;
+  padding-left: 0 !important;
+}
+
+.wp-block-rss a {
+  font-size: 1.2em !important;
+  font-weight: bold !important;
+}
+
+.wp-block-quote {
+  border-color: var(--text) !important;
+}
+
+.editor-styles-wrapper cite {
+  margin-top: 1.5rem !important;
+}
+
+.block-editor-rich-text__editable.wp-block-quote__citation.rich-text {
+  margin-top: 1.5rem !important;
+}
+
+figcaption {
+  text-align: center !important;
+  font-size: 14px !important;
+}
