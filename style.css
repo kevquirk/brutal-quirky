@@ -374,17 +374,21 @@ details[open] > *:last-child {
     display: none;
   }
 
-  .entry-meta {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
+.entry-meta {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
 
-  strong, b {
-    font-weight: 600;
-  }
+.entry-meta.comment-metadata {
+  font-size: inherit;
+}
 
-  #webmention-source {
+strong, b {
+  font-weight: 600;
+}
+
+#webmention-source {
     width: 100%;
   }
 
