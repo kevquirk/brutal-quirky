@@ -382,4 +382,8 @@ details[open] > *:last-child {
 
   #webmention-source {
     width: 100%;
-    }
+  }
+
+.comments-title {
+  display: none;
+}
