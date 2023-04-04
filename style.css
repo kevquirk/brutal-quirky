@@ -238,7 +238,7 @@ h2, h3 {
 .brutal-button {
 	background-color: var(--bg);
   border: 3px solid var(--text);
-	text-decoration: none;
+	text-decoration: none !important;
   color: var(--text);
 }
 
