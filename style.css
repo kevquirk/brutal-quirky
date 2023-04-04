@@ -83,6 +83,10 @@ a {
  fill: var(--text);
 }
 
+.main-navigation .main-nav ul li a, .menu-toggle, .main-navigation .menu-bar-item > a {
+  padding: 5px;
+}
+
 .main-navigation a {
   font-weight: bold;
   text-decoration: underline;
