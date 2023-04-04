@@ -445,3 +445,7 @@ details[open] > *:last-child {
   strong, b {
     font-weight: 600;
   }
+
+  #webmention-source {
+    width: 100%;
+    }
