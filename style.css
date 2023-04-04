@@ -83,21 +83,13 @@ a {
  fill: var(--text);
 }
 
-.main-navigation {
-  border-bottom: 3px solid var(--text);
-  border-top: 3px solid var(--text);
-  margin: .5rem auto;
-}
-
 .main-navigation a {
-  padding: 0.75rem 0;
-  font-weight: bold;
+  padding: 5px;
 }
 
 .main-navigation a:hover,
 .current-menu-item a {
- background-color: var(--text);
-	color: var(--bg) !important;
+ background-color: var(--pink);
 }
 
 blockquote {
