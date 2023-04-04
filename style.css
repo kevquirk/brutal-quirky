@@ -84,12 +84,15 @@ a {
 }
 
 .main-navigation a {
-  padding: 5px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 0.15rem;
 }
 
 .main-navigation a:hover,
 .current-menu-item a {
  background-color: var(--pink);
+ text-decoration: none;
 }
 
 blockquote {
