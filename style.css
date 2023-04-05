@@ -403,5 +403,6 @@ strong, b {
 
 .comment-content {
   margin: 0 0 1.5rem 0;
-  border-color: var(--text);
+  border: none;
+  padding: 0;
 }
