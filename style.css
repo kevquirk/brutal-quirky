@@ -59,6 +59,11 @@
  }
 }
 
+header {
+  border-bottom: 3px solid var(--text);
+  margin-bottom: 2.5rem;
+}
+
 a,
 a:visited {
   color: var(--text);
