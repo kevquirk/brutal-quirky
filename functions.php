@@ -78,3 +78,10 @@ add_filter('default_title', function ($title) {
     }
     return $title;
 } );
+
+// Fix comment date
+add_filter( 'get_comment_date', 'db_reformat_comment_date' );	
+function db_reformat_comment_date( $dateForm ) {
+    $dateForm  = date("j F Y H:i");	
+    return $dateForm;
+}
