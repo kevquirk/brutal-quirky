@@ -402,7 +402,7 @@ strong, b {
   box-shadow: none;
 }
 
-.wp-block-search__input {
+#wp-block-search__input-1 {
   margin: 2rem auto;
   display: block;
   width: 100%;
