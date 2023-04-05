@@ -250,19 +250,6 @@ a.button:hover {
   }
 }
 
-.wp-block-search__button {
-	border-radius: 0;
-	background: var(--text);
-	color: var(--bg);
-  border: 2px solid var(--text);
-}
-
-.wp-block-search__button:hover {
-  background: var(--dark-text);
-  border-color: var(--dark-text);
-  color: var(--bg);
-}
-
 /* Remove iOS formatting on inputs */
 input, textarea {
  -webkit-appearance: none !important;
