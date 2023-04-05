@@ -413,3 +413,10 @@ strong, b {
 .slideout-navigation button.slideout-exit {
   box-shadow: none;
 }
+
+#wp-block-search__input-1 {
+  margin: 2rem auto;
+  display: block;
+  width: 100%;
+  border: 3px solid var(--text);
+  }
