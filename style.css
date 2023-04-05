@@ -393,6 +393,10 @@ strong, b {
     width: 100%;
   }
 
+.comment-body {
+  font-size: 1.1rem;
+}
+
 .comments-title {
   display: none;
 }
