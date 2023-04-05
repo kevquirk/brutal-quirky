@@ -182,7 +182,7 @@ a.button {
 	background-color: var(--bg);
   border: 3px solid var(--text);
 	text-decoration: none;
-  color: var(--dark-text);
+  color: var(--text);
   padding: 10px 12px;
   box-shadow: 6px 6px 0 0 var(--text);
   transition: all 0.1s ease;
