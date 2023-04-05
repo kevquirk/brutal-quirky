@@ -414,3 +414,8 @@ strong, b {
 .site-title a {
   text-decoration: none;
 }
+
+.menu-toggle,
+.slideout-navigation button.slideout-exit {
+  box-shadow: none;
+}
