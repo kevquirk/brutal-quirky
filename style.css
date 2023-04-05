@@ -410,3 +410,7 @@ strong, b {
 .one-container.archive .post:not(:last-child):not(.is-loop-template-item), .one-container.blog .post:not(:last-child):not(.is-loop-template-item) {
   padding-bottom: 0;
 }
+
+.site-title a {
+  text-decoration: none;
+}
