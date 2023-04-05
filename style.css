@@ -238,18 +238,6 @@ a.button:hover {
   margin: 2rem 0;
 }
 
-.wp-block-search__input {
-  width: 80%;
-  border: 2px solid var(--text) !important;
-}
-
-@media(max-width: 640px) {
-  .wp-block-search__input {
-    width: 100%;
-    margin-bottom: 0.25rem;
-  }
-}
-
 /* Remove iOS formatting on inputs */
 input, textarea {
  -webkit-appearance: none !important;
@@ -414,7 +402,7 @@ strong, b {
   box-shadow: none;
 }
 
-#wp-block-search__input-1 {
+.wp-block-search__input {
   margin: 2rem auto;
   display: block;
   width: 100%;
