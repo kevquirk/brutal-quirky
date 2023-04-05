@@ -406,3 +406,7 @@ strong, b {
   border: none;
   padding: 0;
 }
+
+.one-container.archive .post:not(:last-child):not(.is-loop-template-item), .one-container.blog .post:not(:last-child):not(.is-loop-template-item) {
+  padding-bottom: 0;
+}
