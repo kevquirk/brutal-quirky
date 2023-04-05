@@ -176,6 +176,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
+.wp-block-search__button,
 a.button {
   font-size: 1.1rem;
 	background-color: var(--bg);
@@ -201,6 +202,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover,
+.wp-block-search__button:hover,
 a.button:hover {
   box-shadow: 0px 0px 0 0 var(--text);
   background: var(--pink);
