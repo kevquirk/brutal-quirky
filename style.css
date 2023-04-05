@@ -382,6 +382,7 @@ details[open] > *:last-child {
 
 .post-date {
   font-size: 1.6rem;
+  font-weight: bold;
   margin-bottom: 2.5rem; 
 }
 
