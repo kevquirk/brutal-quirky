@@ -77,8 +77,9 @@ a:active {
   color: var(--dark-text);
 }
 
-main img {
+img {
   max-width: 620px;
+  height: auto;
 }
 
 .site-logo {
