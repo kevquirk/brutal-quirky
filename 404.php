@@ -13,8 +13,9 @@ get_header(); ?>
 
 	<div <?php generate_do_attr( 'content' ); ?>>
 		<main <?php generate_do_attr( 'main' ); ?>>
-			<h2>Oops! That page can’t be found.</h2>
-			<p>It looks like nothing was found at this location. Maybe try searching?</p>
+			<h1>Page not found! 🫤</h1>
+			<p>It looks like nothing was found at this location. From time to time I will delete the odd post from this site. Problem is, I can't delete the corresponding post from the Fediverse, so that's why you might have ended up visiting a bloken link. Sorry about that.</p>
+			<a class="brutal-shadow" href="/">Back to homepage</a>
 		</main>
 	</div>
 
