@@ -18,7 +18,7 @@ get_header(); ?>
 			
 			<p>From time to time I will delete the odd post from this site. Problem is, I can't delete the corresponding post from the Fediverse, so that's why you might have ended up visiting a bloken link. Sorry about that.</p>
 
-			<a class="brutal-shadow" href="/">Back to homepage</a>
+			<a class="brutal-shadow" href="/">← Back to homepage</a>
 		</main>
 	</div>
 
