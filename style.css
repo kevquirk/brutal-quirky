@@ -77,9 +77,8 @@ a:active {
   color: var(--dark-text);
 }
 
-.inside-article h2 a,
-.inside-article h3 a {
-  color: var(--dark-text) !important;
+main img {
+  max-width: 620px;
 }
 
 .site-logo {
