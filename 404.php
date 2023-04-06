@@ -13,23 +13,8 @@ get_header(); ?>
 
 	<div <?php generate_do_attr( 'content' ); ?>>
 		<main <?php generate_do_attr( 'main' ); ?>>
-			<?php
-			/**
-			 * generate_before_main_content hook.
-			 *
-			 * @since 0.1
-			 */
-			do_action( 'generate_before_main_content' );
-
-			generate_do_template_part( '404' );
-
-			/**
-			 * generate_after_main_content hook.
-			 *
-			 * @since 0.1
-			 */
-			do_action( 'generate_after_main_content' );
-			?>
+			<h2>Oops! That page can’t be found.</h2>
+			<p>It looks like nothing was found at this location. Maybe try searching?</p>
 		</main>
 	</div>
 
