@@ -170,6 +170,14 @@ h2, h3 {
   margin-top: 0 !important;
 }
 
+input, textarea {
+  background: var(--input-bg);
+  color: var(--text);
+  border: 1px solid var(--text);
+  -webkit-appearance: none !important;
+  border-radius: 0 !important;
+}
+
 .brutal-button,
 .brutal-shadow,
 button,
@@ -236,14 +244,6 @@ a.button:hover {
 
 .wp-block-image {
   margin: 2rem 0;
-}
-
-input, textarea {
-  background: var(--input-bg);
-  color: var(--text);
-  border: 1px solid var(--text);
-  -webkit-appearance: none !important;
-  border-radius: 0 !important;
 }
 
 @media(max-width: 640px) {
