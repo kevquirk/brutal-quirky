@@ -389,6 +389,10 @@ strong, b {
   padding: 0;
 }
 
+.depth-1.parent>.children {
+  border-bottom: none;
+}
+
 .one-container.archive .post:not(:last-child):not(.is-loop-template-item), .one-container.blog .post:not(:last-child):not(.is-loop-template-item) {
   padding-bottom: 0;
 }
