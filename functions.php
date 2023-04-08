@@ -78,10 +78,3 @@ add_filter('default_title', function ($title) {
     }
     return $title;
 } );
-
-// Add u-photo class to all uploaded pictures
-function add_image_class($class){
-    $class .= ' u-photo';
-    return $class;
-}
-add_filter('get_image_tag_class','add_image_class');
