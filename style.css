@@ -240,10 +240,11 @@ a.button:hover {
 
 /* Remove iOS formatting on inputs */
 input, textarea {
- -webkit-appearance: none !important;
- border-radius: 0 !important;
- background: var(--input-bg) !important;
- color: var(--text) !important;
+  background: var(--input-bg) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--text) !important;
+  -webkit-appearance: none !important;
+  border-radius: 0 !important;
 }
 
 @media(max-width: 640px) {
