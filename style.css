@@ -205,7 +205,7 @@ input[type="submit"]:hover,
 .wp-block-search__button:hover,
 a.button:hover {
   box-shadow: 0px 0px 0 0 var(--text);
-  background: var(--pink);
+  background: var(--pink) !important;
   color: var(--dark-text);
 }
 
