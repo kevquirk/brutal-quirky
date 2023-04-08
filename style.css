@@ -242,7 +242,7 @@ a.button:hover {
 input, textarea {
   background: var(--input-bg) !important;
   color: var(--text) !important;
-  border: 1px solid var(--text) !important;
+  border: 1px solid var(--text);
   -webkit-appearance: none !important;
   border-radius: 0 !important;
 }
