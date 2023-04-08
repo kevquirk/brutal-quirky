@@ -238,7 +238,6 @@ a.button:hover {
   margin: 2rem 0;
 }
 
-/* Remove iOS formatting on inputs */
 input, textarea {
   background: var(--input-bg) !important;
   color: var(--text) !important;
